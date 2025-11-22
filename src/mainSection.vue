@@ -17,6 +17,7 @@
     <!--  Best Deals -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
       <!-- CARD LOOP -->
+       
       <div
         v-for="(phone, index) in phones"
         :key="index"
@@ -105,101 +106,118 @@ export default {
   name: "BestDeals",
   data() {
     return {
-      phones: [
-        {
-          title: "Tecno 6-128",
-          price: "Rs. 45,999",
-          reviews: 110,
-          image: "/phones/download (3).jpg",
-        },
-        {
-          title: "Oppo 4-64",
-          price: "Rs. 39,999",
-          reviews: 40,
-          image: "/phones/download (1).jpg",
-        },
-        {
-          title: "Realme 4-64",
-          price: "Rs. 29,500",
-          reviews: 30,
-          image: "/phones/download (2).jpg",
-        },
-        {
-          title: "One Plus 8-128",
-          price: "Rs. 52,000",
-          reviews: 51,
-          image: "/phones/images (2).jpg",
-        },
-        {
-          title: "Samsung 4-64",
-          price: "Rs. 25,000",
-          reviews: 75,
-          image: "/phones/images (5).jpg",
-        },
-      ],
+    phones: [
+  {
+    id: 1,
+    title: "Tecno 6-128",
+    price: "Rs. 45,999",
+    reviews: 110,
+    image: "/phones/download (3).jpg",
+  },
+  {
+    id: 2,
+    title: "Oppo 4-64",
+    price: "Rs. 39,999",
+    reviews: 40,
+    image: "/phones/download (1).jpg",
+  },
+  {
+    id: 3,
+    title: "Realme 4-64",
+    price: "Rs. 29,500",
+    reviews: 30,
+    image: "/phones/download (2).jpg",
+  },
+  {
+    id: 4,
+    title: "One Plus 8-128",
+    price: "Rs. 52,000",
+    reviews: 51,
+    image: "/phones/images (2).jpg",
+  },
+  {
+    id: 5,
+    title: "Samsung 4-64",
+    price: "Rs. 25,000",
+    reviews: 75,
+    image: "/phones/images (5).jpg",
+  },
+],
 
-     TopCatagories:[
-      {
-         title: "C type charger 50v",
-          price: "Rs. 1,999",
-          reviews: 50,
-          image: "/top catgeries/download (1).jpg",
-      },
-       {
-         title: "Mobiles phone Cover",
-          price: "Rs. 500",
-          reviews: 10,
-          image: "/top catgeries/download (2).jpg",
-      },
-      {
-         title: "HeadPhones",
-          price: "Rs. 2,000",
-          reviews: 210,
-          image: "/top catgeries/download (3).jpg",
-      },
-        {
-         title: "HeadPhones",
-          price: "Rs. 2,599",
-          reviews: 61,
-          image: "/top catgeries/download (4).jpg",
-      },
-        {
-         title: "Hand Free",
-          price: "Rs. 600",
-          reviews: 71,
-          image: "/top catgeries/download (5).jpg",
-      },
-      {
-         title: "Hand Free",
-          price: "Rs. 1,599",
-          reviews: 42,
-          image: "/top catgeries/download (6).jpg",
-      },
-       {
-         title: "Gaming Fan",
-          price: "Rs. 5,000",
-          reviews: 59,
-          image: "/top catgeries/download (7).jpg",
-      },
-      {
-         title: "Power Bank",
-          price: "Rs. 9,999",
-          reviews: 26,
-          image: "/top catgeries/download (8).jpg",
-      },
-        {
-         title: "Power Bank",
-          price: "Rs. 11,599",
-          reviews: 61,
-          image: "/top catgeries/download (9).jpg",
-      },
-        {
-         title: "Mobile Charger",
-          price: "Rs. 700",
-          reviews: 71,
-          image: "/top catgeries/download.jpg",
-      },
-     ] 
+
+     TopCatagories: [
+  {
+    id: 101,
+    title: "C type charger 50v",
+    price: "Rs. 1,999",
+    reviews: 50,
+    image: "/top catgeries/download (1).jpg",
+  },
+  {
+    id: 102,
+    title: "Mobiles phone Cover",
+    price: "Rs. 500",
+    reviews: 10,
+    image: "/top catgeries/download (2).jpg",
+  },
+  {
+    id: 103,
+    title: "HeadPhones",
+    price: "Rs. 2,000",
+    reviews: 210,
+    image: "/top catgeries/download (3).jpg",
+  },
+  {
+    id: 104,
+    title: "HeadPhones",
+    price: "Rs. 2,599",
+    reviews: 61,
+    image: "/top catgeries/download (4).jpg",
+  },
+  {
+    id: 105,
+    title: "Hand Free",
+    price: "Rs. 600",
+    reviews: 71,
+    image: "/top catgeries/download (5).jpg",
+  },
+  {
+    id: 106,
+    title: "Hand Free",
+    price: "Rs. 1,599",
+    reviews: 42,
+    image: "/top catgeries/download (6).jpg",
+  },
+  {
+    id: 107,
+    title: "Gaming Fan",
+    price: "Rs. 5,000",
+    reviews: 59,
+    image: "/top catgeries/download (7).jpg",
+  },
+  {
+    id: 108,
+    title: "Power Bank",
+    price: "Rs. 9,999",
+    reviews: 26,
+    image: "/top catgeries/download (8).jpg",
+  },
+  {
+    id: 109,
+    title: "Power Bank",
+    price: "Rs. 11,599",
+    reviews: 61,
+    image: "/top catgeries/download (9).jpg",
+  },
+  {
+    id: 110,
+    title: "Mobile Charger",
+    price: "Rs. 700",
+    reviews: 71,
+    image: "/top catgeries/download.jpg",
+  },
+]
+
     };
   },
 
