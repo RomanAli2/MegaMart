@@ -49,11 +49,17 @@
 
           <!-- Actions -->
           <div class="hidden sm:flex items-center gap-2">
-            <button  @click="mode='signuppage'" class="bg-[#F5F5F5] px-3 py-2 rounded text-sm flex items-center gap-2 hover:bg-[#ecebeb]">
-              <i class="fa-solid fa-user text-sky-400 "></i>
-              <span class=" text-xs"  v-if="userEmailvalue.length>0">{{ userEmailvalue }}</span>
-              <span v-else>SignUp/Login</span>
-            </button>
+         <button  
+  @click="mode = userEmailvalue.length > 0 ? 'profile' : 'signuppage'"
+  class="bg-[#F5F5F5] px-3 py-2 rounded text-sm flex items-center gap-2 hover:bg-[#ecebeb]"
+>
+  <i class="fa-solid fa-user text-sky-400"></i>
+
+  <span class="text-xs" v-if="userEmailvalue.length > 0">{{ userEmailvalue }}</span>
+  <span v-else>SignUp/Login</span>
+</button>
+
+
 
             <button @click="mode='cart'" class="bg-[#F5F5F5] px-3 py-2 rounded text-sm flex items-center gap-2 hover:bg-[#ecebeb]">
               <i class="fa-solid fa-cart-shopping text-sky-400"></i>
@@ -65,7 +71,7 @@
 
       <!-- Mobile actions (visible only on small screens) -->
       <div class="flex items-center gap-3 md:hidden">
-        <button class="p-2 rounded hover:bg-[#ecebeb] bg-[#F5F5F5]" @click="mode='signuppage'">
+        <button class="p-2 rounded hover:bg-[#ecebeb] bg-[#F5F5F5]"@click="mode = userEmailvalue.length > 0 ? 'profile' : 'signuppage'">
           <i class="fa-solid fa-user text-sky-400"></i>
         </button>
         <button @click="mode='cart'" class="p-2 rounded hover:bg-[#ecebeb] bg-[#F5F5F5]">
@@ -154,6 +160,13 @@
 <a @click="mode=null" class="block text-center align-bottom mt-50 font-bold text-red-500 hover:text-red-700 cursor-pointer">Close</a>
     </div>
   </div>
+   <div v-if="mode==='profile'" class="fixed inset-0  backdrop-blur-xs bg-black/30 flex justify-center items-center z-50">
+    <div class="bg-white text-center p-8 h-60 w-full rounded-lg shadow-md max-w-sm ">
+<h1 class=" font-bold">Profile</h1><br>
+<span class=" text-sm"  v-if="userEmailvalue.length>0">{{ userEmailvalue }}</span><br><button class="px-3  mt-3 py-0.5 bg-[#d3d2d2] rounded-md hover:text-red-600"  @click="logout">Logout</button>
+<a @click="mode=null" class="block text-center align-bottom mt-10 font-bold text-red-500 hover:text-red-700 cursor-pointer">Close</a>
+    </div>
+  </div>
     
     
 </template>
@@ -213,7 +226,9 @@ name.value=""
   }
 
 const userEmailvalue = ref(localStorage.getItem("UserEmail") || "")
-
-
+function logout(){
+  localStorage.clear(UserEmail)
+  window.location.reload();
+}
 </script>
 
