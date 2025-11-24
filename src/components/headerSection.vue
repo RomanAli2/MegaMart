@@ -44,6 +44,7 @@
               type="text"
               placeholder="Search essentials more..."
               class="w-full bg-transparent focus:outline-none text-sm"
+              
             />
           </div>
 

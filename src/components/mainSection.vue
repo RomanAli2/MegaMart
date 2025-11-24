@@ -27,6 +27,7 @@
         <img
           :src=" phone.image "
           class="w-full h-40 object-cover rounded-lg"
+          @click="$router.push(`/deatil-page`)"
         />
 
         <h3 class="mt-3 font-semibold text-gray-700 text-sm">

@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import mainSection from './mainSection.vue'
-import BestDeals from './BestDeals.vue'
-import TopCatagories from './TopCatagories.vue'
+import mainSection from './components/mainSection.vue'
+import BestDeals from './components/BestDeals.vue'
+import TopCatagories from './components/TopCatagories.vue'
 
 
 const routes = [
