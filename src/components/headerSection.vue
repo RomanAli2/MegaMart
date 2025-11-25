@@ -232,4 +232,3 @@ function logout(){
   window.location.reload();
 }
 </script>
-

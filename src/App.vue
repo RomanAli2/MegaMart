@@ -1,5 +1,6 @@
 <template>
-<HeaderSection/>
+  <HeaderSection />
+
   <RouterView /><br>
   <FooterSection />
 </template>
