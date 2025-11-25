@@ -143,6 +143,43 @@ export default {
     reviews: 75,
     image: "/phones/images (5).jpg",
   },
+  // Row 2
+  {
+    id: 6,
+    title: "One Plus 6-128",
+    price: "Rs. 85,999",
+    reviews: 110,
+    image: "/phones/images (6).jpg",
+  },
+  {
+    id: 7,
+    title: "Oppo 4-64",
+    price: "Rs. 59,999",
+    reviews: 40,
+    image: "/phones/images (7).jpg",
+  },
+  {
+    id: 8,
+    title: "Oppo 4-64",
+    price: "Rs. 39,500",
+    reviews: 30,
+    image: "/phones/images (8).jpg",
+  },
+  {
+    id: 9,
+    title: "Samsung 8-256",
+    price: "Rs. 51,000",
+    reviews: 51,
+    image: "/phones/images (9).jpg",
+  },
+  {
+    id: 10,
+    title: "One Plus 4-64",
+    price: "Rs. 65,000",
+    reviews: 75,
+    image: "/phones/images.jpg",
+  },
+
 ],
 
 
