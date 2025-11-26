@@ -52,76 +52,76 @@ export default{
   data(){
     return{
    
-     TopCatagories: [
+    TopCatagories: [
   {
     id: 101,
     title: "C type charger 50v",
     price: "Rs. 1,999",
     reviews: 50,
-    image: "/top catgeries/download (1).jpg",
+    image: "/image/top catgeries/download (1).jpg",
   },
   {
     id: 102,
     title: "Mobiles phone Cover",
     price: "Rs. 500",
     reviews: 10,
-    image: "/top catgeries/download (2).jpg",
+    image: "/image/top catgeries/download (2).jpg",
   },
   {
     id: 103,
     title: "HeadPhones",
     price: "Rs. 2,000",
     reviews: 210,
-    image: "/top catgeries/download (3).jpg",
+    image: "/image/top catgeries/download (3).jpg",
   },
   {
     id: 104,
     title: "HeadPhones",
     price: "Rs. 2,599",
     reviews: 61,
-    image: "/top catgeries/download (4).jpg",
+    image: "/image/top catgeries/download (4).jpg",
   },
   {
     id: 105,
     title: "Hand Free",
     price: "Rs. 600",
     reviews: 71,
-    image: "/top catgeries/download (5).jpg",
+    image: "/image/top catgeries/download (5).jpg",
   },
   {
     id: 106,
     title: "Hand Free",
     price: "Rs. 1,599",
     reviews: 42,
-    image: "/top catgeries/download (6).jpg",
+    image: "/image/top catgeries/download (6).jpg",
   },
   {
     id: 107,
     title: "Gaming Fan",
     price: "Rs. 5,000",
     reviews: 59,
-    image: "/top catgeries/download (7).jpg",
+    image: "/image/top catgeries/download (7).jpg",
   },
   {
     id: 108,
     title: "Power Bank",
     price: "Rs. 9,999",
     reviews: 26,
-    image: "/top catgeries/download (8).jpg",
+    image: "/image/top catgeries/download (8).jpg",
   },
   {
     id: 109,
     title: "Power Bank",
     price: "Rs. 11,599",
     reviews: 61,
-    image: "/top catgeries/download (9).jpg",
+    image: "/image/top catgeries/download (9).jpg",
   },
   {
     id: 110,
     title: "Mobile Charger",
     price: "Rs. 700",
     reviews: 71,
-    image: "/top catgeries/download.jpg",
+    image: "/image/top catgeries/download.jpg",
   },
 ]
     }
